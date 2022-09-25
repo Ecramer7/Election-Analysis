@@ -83,7 +83,7 @@
                  county_votes[county_name] = 0
 
              # 5: Add a vote to that county's vote count.
-             county_votes[county_name] =+ 1
+             county_votes[county_name] += 1
 
 
 
@@ -166,7 +166,7 @@
    The results of the election are shown in the image below. Denver had the largest voter turnout, followed by Jefferson and Arapahoe in last. 
    
    
-  <img width="200" alt="image" src="https://user-images.githubusercontent.com/111031608/189467822-71e5cea7-295a-40d0-90d4-bfeb6eede87a.png">
+ <img width="464" alt="image" src="https://user-images.githubusercontent.com/111031608/192170692-e35f87c2-b128-413e-b8d1-ac76cdabf721.png">
  
    ### Summary 
    Based on the results of the election audit, Seth and Thomas should focus a campaign in Denver. As the county with the highest turnout, it has the greatest potential to make the most impact in terms of securing votes. This script can be use in future elections to target cities with the highest voter turnout in order for campaigners to put priority in those areas. This script can also be edited to identify which county’s favor which candidates and to calculate which counties have the highest turnout of votes in a particular candidate’s favor. In conclusion, this analysis can aid in accomplishing the goal of using voter data to have the biggest impact with future campaigns.
