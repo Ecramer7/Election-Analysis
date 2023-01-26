@@ -2,43 +2,43 @@
 
 ## Code Overview
 
-  -*- coding: UTF-8 -*-
- """PyPoll Homework Challenge Solution."""
+      -*- coding: UTF-8 -*-
+     """PyPoll Homework Challenge Solution."""
 
-  # Add our dependencies.
-  import csv
-  import os
+      # Add our dependencies.
+      import csv
+      import os
 
-  # Add a variable to load a file from a path.
-  file_to_load = "election_results.csv"
-  # Add a variable to save the file to a path.
-  file_to_save = os.path.join("analysis", "election_analysis.txt")
+      # Add a variable to load a file from a path.
+      file_to_load = "election_results.csv"
+      # Add a variable to save the file to a path.
+      file_to_save = os.path.join("analysis", "election_analysis.txt")
 
-  # Initialize a total vote counter.
-  total_votes = 0
+      # Initialize a total vote counter.
+      total_votes = 0
 
-  # Candidate Options and candidate votes.
-  candidate_options = []
-  candidate_votes = {}
+      # Candidate Options and candidate votes.
+      candidate_options = []
+      candidate_votes = {}
 
-  # 1: Create a county list and county votes dictionary.
-  county_options = []
-  county_votes = {}
+      # 1: Create a county list and county votes dictionary.
+      county_options = []
+      county_votes = {}
 
-  # Track the winning candidate, vote count and percentage
-  winning_candidate = ""
-  winning_count = 0
-  winning_percentage = 0
+      # Track the winning candidate, vote count and percentage
+      winning_candidate = ""
+      winning_count = 0
+      winning_percentage = 0
 
-  # 2: Track the largest county and county voter turnout.
-  highest_county = ""
-  turnout_count = 0
-  turnout_percentage = 0
+      # 2: Track the largest county and county voter turnout.
+      highest_county = ""
+      turnout_count = 0
+      turnout_percentage = 0
 
 
-  # Read the csv and convert it into a list of dictionaries
-  with open(file_to_load) as election_result:
-      reader = csv.reader(election_result)
+      # Read the csv and convert it into a list of dictionaries
+      with open(file_to_load) as election_result:
+          reader = csv.reader(election_result)
 
      # Read the header
      header = next(reader)
@@ -82,8 +82,8 @@
          county_votes[county_name] += 1
 
 
- # Save the results to our text file.
- with open(file_to_save, "w") as txt_file:
+     # Save the results to our text file.
+     with open(file_to_save, "w") as txt_file:
 
      # Print the final vote count (to terminal)
      election_results = (
